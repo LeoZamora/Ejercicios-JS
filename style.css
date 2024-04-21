@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Righteous&family=Work+Sans:wght@100;200;300;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    font-family: 'Righteous';
+}
+
+input{
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.Ej2 h2{
+    margin-bottom: 10px;
+}
+
+#number1, #number2, #number3, #number4, #number5{
+    width: 40px;
+}
+
+#num1, #num2, #num3, #num4, #num5{
+    width: 40px;
+}
+
+#numero1, #numero2, #numero3, #numero4, #numero5{
+    width: 40px;
+}
+
+.array input, .indexs input{
+    width: 40px;
+}
+
+/* .Ej14{
+    display: none;
+} */
+
+.values{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+#pass-generate{
+    font-weight: normal;
+}
+
+.screen-pares{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.screen-posiciones{
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+}
+
+.Ej1, .Ej2, .Ej3, .Ej4, .Ej5,
+.Ej6, .Ej7, .Ej8, .Ej9, .Ej10,
+.Ej11, .Ej12, .Ej13, .Ej14, .Ej15,
+.Ej16, .Ej17, .Ej18-19, .Ej20,
+.Ej21, .Ej22, .Ej23{
+    margin: 5px 10px;
+    background-color: blueviolet;
+}

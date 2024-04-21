@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <h1>Hola</h1>
+    <div class="Ej1">
+        <h2>Contraseña Valida</h2>
+        <label for="pass">Escribe tu contraseña: </label>
+        <br>
+        <input type="password" name="" id="pass">
+        <br>
+        <button id="btn">Enviar</button>
+    </div>
+
+    <div class="Ej2">
+        <h2>Calcular Impuestos</h2>
+        <label for="edad" >Ingrese su Edad: <input type="text" name="" id="edad"></label>
+        <br>
+        <label for="ing">Digite sus ingresos: $ <input type="text" name="" id="ing"></label>
+        <br>
+        <button id="cal-btn">Calcular</button>
+
+        <div class="ingreso">
+            <h3>Ingresos:</h3>
+            <p id="ing-total">0</p>
+        </div>
+    </div>
+
+    <div class="Ej3">
+        <h2>BMI</h2>
+        <label for="peso">Ingrese su Peso: <input type="text"  id="peso" placeholder="Peso"></label>
+        <br>
+        <label for="altura">Ingrese su Altura: <input type="text" id="altura" placeholder="Altura"></label>
+        <button id="cal-bmi">Calcular</button>
+
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="res">0</p>
+        </div>
+    </div>
+
+    <div class="Ej4">
+        <h2>Imprimir arreglo</h2>
+        <label for="1er">Ingresa el 1er elemento: <input type="text" name="" id="1er"></label>
+        <br>
+        <label for="2do">Ingresa el 1er elemento: <input type="text" name="" id="2do"></label>
+        <br>
+        <label for="3ero">Ingresa el 1er elemento: <input type="text" name="" id="3ero"></label>
+        <br>
+        <label for="4to">Ingresa el 1er elemento: <input type="text" name="" id="4to"></label>
+        <br>
+        <button class="btn-array">Enviar</button>
+
+        <div class="array">
+            <h3>Elementos: </h3>
+            <div class="container">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Ej5">
+        <h2>Likes</h2>
+        <strong>Formatos</strong>
+        <br>
+        <span>1000 = 1k</span>
+        <br>
+        <span>1000000 = 1M</span>
+        <br>
+        <label for="cant">Ingresa una cantidad de Likes: <input type="text" id="cant"></label>
+        <br>
+        <button id="btn-cant">Convert</button>
+
+        <div class="screen">
+            <h3>Conversion:</h3>
+            <p id="cant-convert"></p>
+        </div>
+    </div>
+
+    <div class="Ej6">
+        <h2>FizzBuzz</h2>
+        <label for="cant-fb">Ingrese una cantidad: <input type="text" id="cant-fb"></label>
+        <br>
+        <button id="btn-convert">Convertir</button>
+        <h3>wait: </h3>
+        <div class="res">
+            <p id="fb">0</p>
+        </div>
+    </div>
+
+    <div class="Ej7">
+        <h2>Rango de Numeros</h2>
+        <label for="cant1">Ingrese la 1er Cantidad <input type="text" id="cant1"></label>
+        <br>
+        <label for="cant2">Ingrese la 2da Cantidad <input type="text" id="cant2"></label>
+        <br>
+        <button id="btn-range">Calcular</button>
+
+        <div>
+            <h3>Suma de los numeros en el rango</h3>
+            <p id="screen-range">0</p>
+        </div>
+        <div>
+            <h3>Cantidad de numeros en el rango</h3>
+            <p id="cant-range">0</p>
+        </div>
+
+    </div>
+
+    <div class="Ej8">
+        <h2>Rango de Numeros#2</h2>
+        <label for="cant-r1">Ingrese la 1er Cantidad <input type="text" id="cant-r1"></label>
+        <br>
+        <label for="cant-r2">Ingrese la 2da Cantidad <input type="text" id="cant-r2"></label>
+        <br>
+        <button id="btn-range2">Calcular</button>
+
+        <div>
+            <h3>Suma de Numeros en el rango</h3>
+            <p id="suma"></p>
+        </div>
+
+        <div>
+            <h3>Cantidad de Numeros en el rango</h3>
+            <p id="cant-rg"></p>
+        </div>
+    </div>
+
+    <div class="Ej9">
+        <h2>Numero de Ases</h2>
+        <label for="word">Escribe una palabra: <input type="text" id="word"></label>
+        <br>
+        <label for="letra">Letra que deseas filtrar: <input type="text" id="letra"></label>
+        <br>
+        <button id="btn-word">Calcular</button>
+
+        <div>
+            <h3>Numero de Ases</h3>
+            <p id="ases">0</p>
+        </div>
+    </div>
+
+    <div class="Ej10">
+        <h2>Numero de Caracter</h2>
+        <label for="word-caracter">Escribe una palabra: <input type="text" id="word-caracter"></label>
+        <br>
+        <label for="letra-caracter">Letra que deseas filtrar: <input type="text" id="letra-caracter"></label>
+        <br>
+        <button id="btn-caracter">Calcular</button>
+
+        <div>
+            <h3>Cantidad de Caracter</h3>
+            <p id="caracter">0</p>
+        </div>
+    </div>
+
+    <div class="Ej11">
+        <h2>Suma de arreglo</h2>
+        <label for="number1">Numero #1: <input type="text" id="number1"></label>
+        <br>
+        <label for="number2">Numero #2: <input type="text" id="number2"></label>
+        <br>
+        <label for="number3">Numero #3: <input type="text" id="number3"></label>
+        <br>
+        <label for="number4">Numero #4: <input type="text" id="number4"></label>
+        <br>
+        <label for="number5">Numero #5: <input type="text" id="number5"></label>
+        <br>
+        <button id="btn-numbers">Calcular</button>
+
+        <div>
+            <h3>Suma del Arreglo</h3>
+            <p id="suma-array">0</p>
+        </div>
+    </div>
+
+    <div class="Ej12">
+        <h2>Multiplicacion de Arreglo</h2>
+        <label for="num1">Numero #1: <input type="text" id="num1"></label>
+        <br>
+        <label for="num2">Numero #2: <input type="text" id="num2"></label>
+        <br>
+        <label for="num3">Numero #3: <input type="text" id="num3"></label>
+        <br>
+        <label for="num4">Numero #4: <input type="text" id="num4"></label>
+        <br>
+        <label for="num5">Numero #5: <input type="text" id="num5"></label>
+        <br>
+        <button id="btn-mult-array">Calcular</button>
+
+        <div>
+            <h3>Suma del Arreglo</h3>
+            <p id="multi-array">0</p>
+        </div>
+    </div>
+
+    <div class="Ej13">
+        <h2>Remover Digito</h2>
+        <label for="numero1">Numero #1: <input type="text" id="numero1"></label>
+        <br>
+        <label for="numero2">Numero #2: <input type="text" id="numero2"></label>
+        <br>
+        <label for="numero3">Numero #3: <input type="text" id="numero3"></label>
+        <br>
+        <label for="numero4">Numero #4: <input type="text" id="numero4"></label>
+        <br>
+        <label for="numero5">Numero #5: <input type="text" id="numero5"></label>
+        <br>
+        <button id="btn-ceros">Calcular</button>
+
+        <div>
+            <h3>Numeros sin el digito 0</h3>
+            <p id="remove-cero">0</p>
+        </div>
+
+    </div>
+
+    <div class="Ej14">
+        <h2>Suma de Arreglo</h2>
+        <div class="indexs">
+            <label for="index1">Ingrese el numero incial del arreglo: <input type="text" id="index1"></label>
+            <br>
+            <label for="index2">Ingrese el numero final del arreglo: <input type="text" id="index2"></label>
+        </div>
+        <hr>
+        <h3>Arreglo completo</h3>
+        <div class="array-14">
+            <label for="n#1">Numero #1: <input type="text" id="n#1"></label>
+            <br>
+            <label for="n#2">Numero #2: <input type="text" id="n#2"></label>
+            <br>
+            <label for="n#3">Numero #3: <input type="text" id="n#3"></label>
+            <br>
+            <label for="n#4">Numero #4: <input type="text" id="n#4"></label>
+            <br>
+            <label for="n#5">Numero #5: <input type="text" id="n#5"></label>
+            <br>
+        </div>
+        <button id="btn-suma">Calcular</button>
+
+        <div>
+            <h3>Suma del rango del Arreglo</h3>
+            <p id="suma-rango">0</p>
+        </div>
+    </div>
+
+    <div class="Ej15">
+        <h2>Transcribir ADN a ARN</h2>
+        <div class="values">
+            <div>
+                <strong>Valores ADN:</strong>
+                <p>G, T, C, A</p>
+            </div>
+            <div>
+                <strong>Valores ARN:</strong>
+                <p>C, A, G, U</p>
+            </div>
+        </div>
+
+        <label for="adn">Escriba un cadena ADN: <input type="text" id="adn"></label>
+        <br>
+        <button id="convert">Convertir</button>
+        <hr>
+        <div>
+            <h3>ARN:</h3>
+            <p id="arn">...</p>
+        </div>
+        <div>
+            <h3>Valores no correspondientes:</h3>
+            <p id="sob">...</p>
+        </div>
+    </div>
+
+    <div class="Ej16">
+        <h2>Capitalizar Palabra</h2>
+        <br>
+        <div>
+            <label for="palabra">Escribe una Palabra: <input type="text" id="palabra"></label>
+            <br>
+            <button id="cap-btn">Capitalizar</button>
+            <br>
+        </div>
+        <div>
+            <h3>Palabra Capitalizada</h3>
+            <p id="pal-cap">...</p>
+        </div>
+    </div>
+
+    <div class="Ej17">
+        <h2>Capitalizar Frase</h2>
+        <br>
+        <div>
+            <label for="frase">Escribe una frase corta: <input type="text" id="frase"></label>
+            <br>
+            <button id="cf-btn">Capitalizar</button>
+            <br>
+        </div>
+        <div>
+            <h3>Frase Capitalizada</h3>
+            <p id="fra-cap">...</p>
+        </div>
+    </div>
+
+    <div class="Ej18-19">
+        <h2>Encontrando el numero Max</h2>
+
+        <div class="array18-19">
+            <label for="n1">Numero #1: <input type="text" id="n1"></label>
+            <br>
+            <label for="n2">Numero #2: <input type="text" id="n2"></label>
+            <br>
+            <label for="n3">Numero #3: <input type="text" id="n3"></label>
+            <br>
+            <label for="n4">Numero #4: <input type="text" id="n4"></label>
+            <br>
+            <label for="n5">Numero #5: <input type="text" id="n5"></label>
+            <br>
+        </div>
+        <div class="btn-max-min">
+            <button id="btn-max">Max</button>
+            <button id="btn-min">Min</button>
+        </div>
+
+        <div>
+            <h3>Numero Max ingresado</h3>
+            <p id="max">0</p>
+        </div>
+    </div>
+
+    <div class="Ej20">
+        <h2>Generador de Contraseña</h2>
+        <div>
+            <label for="password">Ingrese una contraseña: <input type="text" id="password"></label>
+        </div>
+        <div>
+            <button id="generar">Generar</button>
+        </div>
+        <div>
+            <br>
+            <strong>Contraseña Generada: <span id="pass-generate">...</span></strong>
+        </div>
+    </div>
+
+    <div class="Ej21">
+        <h2>Numeros Pares</h2>
+
+        <div class="array">
+            <label for="nb1">Numero #1: <input type="text" id="nb1"></label>
+            <br>
+            <label for="nb2">Numero #2: <input type="text" id="nb2"></label>
+            <br>
+            <label for="nb3">Numero #3: <input type="text" id="nb3"></label>
+            <br>
+            <label for="nb4">Numero #4: <input type="text" id="nb4"></label>
+            <br>
+            <label for="nb5">Numero #5: <input type="text" id="nb5"></label>
+            <br>
+        </div>
+        <div class="btn-pares">
+            <button id="btn-par">Calcular</button>
+        </div>
+
+        <div class="screen-pares">
+            <div class="pares">
+                <h3>Numeros Pares</h3>
+                <p id="par">0</p>
+            </div>
+            <div class="impares">
+                <h3>Numeros Impares</h3>
+                <p id="imp">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ej22">
+        <h2>Posiciones en el Array</h2>
+
+        <div class="array">
+            <label for="d1">Numero #1: <input type="text" id="d1"></label>
+            <br>
+            <label for="d2">Numero #2: <input type="text" id="d2"></label>
+            <br>
+            <label for="d3">Numero #3: <input type="text" id="d3"></label>
+            <br>
+            <label for="d4">Numero #4: <input type="text" id="d4"></label>
+            <br>
+            <label for="d5">Numero #5: <input type="text" id="d5"></label>
+            <br>
+        </div>
+        <div class="btn-posicion">
+            <button id="btn-position">Calcular</button>
+        </div>
+
+        <div class="screen-posiciones">
+            <div class="numeros">
+                <h3>Numeros Pares</h3>
+                <p id="num">0</p>
+            </div>
+            <div class="posiciones">
+                <h3>Posiciones en el Array</h3>
+                <p id="pos">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Ej23">
+        <h1>Array Duplicado</h1>
+
+        <div>
+            <h2>Ingresa diferentes numeros:</h2>
+            <div>
+                <label for="nu1">Numero: <input type="text" id="nu1"></label>
+                <button id="ing-btn">Ingresar</button>
+            </div>
+            <div>
+                <h2>Array Duplicado</h2>
+                <p id="Screen-Duplicate">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

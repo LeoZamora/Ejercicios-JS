@@ -911,16 +911,73 @@ btnIng.addEventListener('click', ()=>{
 })
 // --------------------------------------------
 function arrayDuplicar(arrayDuplicate = []) {
-    let arrayFor = arrayDuplicate.split("");
-
     let arrayNu = [];
 
-    for (let index = 0; index < arrayFor.length; index++) {
-        let arrayD = arrayFor[index]*2;
+    for (let index = 0; index < arrayDuplicate.length; index++) {
+        let arrayD = arrayDuplicate[index]*2;
 
         arrayNu.push(arrayD);   
         
     }
-
     console.log('Array Duplicado: ', arrayNu);
-}arrayDuplicar('2468')
+}arrayDuplicar([1,2,3,4,5,6,7])
+
+// ===============================================================================
+
+let btnFiltro = document.querySelector('#filtrar');
+let screenFiltro = document.querySelector('#frase-filtro');
+let screenFiltroS = document.querySelector('#frase-filtros');
+
+btnFiltro.addEventListener('click', ()=>{
+    let fraseFiltro = document.getElementById('frase-fil').value;
+    let arrayFiltro = fraseFiltro.split(" ");
+    let newArray = [];
+    let newArrayS = [];
+
+    arrayFiltro.forEach(element => {
+        if (element.charAt(0) === 'a'&& element.charAt(element.length - 1) === 's') {
+            newArrayS.push(element);
+            newArray.push(element);
+        }else if(element.charAt(0) === 'a' || element.charAt(0) === 'A'){
+            newArray.push(element);
+            console.log(element);
+        }else if (element.charAt(element.length - 1) === 's') {
+            newArrayS.push(element);
+        }
+
+        console.log(element);
+    })
+
+    screenFiltro.textContent = newArray;
+    screenFiltroS.textContent = newArrayS;
+    // console.log(newArrayS);
+
+
+})
+// -------------------------------------------
+function empiezanA(frase) {
+    let array = frase.split(" ");
+    let newArray = [];
+
+    array.forEach(element => {
+        if (element.charAt(0) === 'a' || element.charAt(0) === 'A') {
+            newArray.push(element)
+        }
+    })
+
+    console.log('Palabras que inician con a - A: ', newArray);
+}empiezanA('Adios mundo')
+// -------------------------------------------
+function terminanS(frase) {
+    let array = frase.split(" ");
+    let newArray = [];
+
+    array.forEach(element => {
+        if (element.charAt(element.length - 1) === 's') {
+            newArray.push(element);
+        }
+    })
+
+    console.log(newArray);
+
+}terminanS('holas')
